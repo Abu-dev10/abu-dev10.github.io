@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F9;
+}
+
+main {
+    flex: 1;
+}
+
+/* NAVBAR */
+header {
+    background-color: #2C2C2A;
+    height: 60px;
+    padding: 0 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+nav ul a {
+    color: #B4B2A9;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul a:hover {
+    color: #ffffff;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1000px;
+    margin: 120px auto 40px;
+    padding: 0 32px;
+    gap: 40px;
+}
+
+.hero-vasen h1 {
+    font-size: 32px;
+    color: #2C2C2A;
+    border-bottom: 2px solid #2C2C2A;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.hero img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 150px;
+}
+
+.hero-oikea {
+    background-color: #2C2C2A;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    flex: 1;
+    margin-top: 200px;
+}
+
+.hero-oikea p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2C2C2A;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+footer p {
+    color: #B4B2A9;
+    font-size: 14px;
+}
+
+footer a {
+    color: #B4B2A9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* KOKEMUS-SIVU */
+.kokemus-sivu {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 32px;
+}
+
+.kokemus-sivu h1 {
+    font-size: 32px;
+    color: #2C2C2A;
+    border-bottom: 2px solid #2C2C2A;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+}
+
+.kokemus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.kokemus-osio {
+    background-color: #2C2C2A;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.kokemus-osio h2 {
+    font-size: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #B4B2A9;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.kokemus-osio ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.kokemus-osio ul li {
+    color: #B4B2A9;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid #5F5E5A;
+}
+
+.kokemus-osio ul li:last-child {
+    border-bottom: none;
+}
+
+.kokemus-taidot {
+    grid-column: 1 / -1;
+}
+
+.kokemus-taidot ul li strong {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.kokemus-taidot ul li span {
+    display: block;
+    color: #B4B2A9;
+    font-size: 14px;
+}
+
+/* YHTEYSTIEDOT */
+.yhteys-sivu {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 32px;
+}
+
+.yhteys-sivu h1 {
+    font-size: 32px;
+    color: #2C2C2A;
+    border-bottom: 2px solid #2C2C2A;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+}
+
+.yhteys-intro {
+    color: #5F5E5A;
+    font-size: 18px;
+    margin-bottom: 32px;
+    font-style: italic;
+    border-left: 3px solid #2C2C2A;
+    padding-left: 16px;
+}
+
+.yhteys-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.yhteys-kortti {
+    background-color: #2C2C2A;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.yhteys-kortti h2 {
+    color: #ffffff;
+    font-size: 18px;
+    border-bottom: 1px solid #5F5E5A;
+    padding-bottom: 12px;
+}
+
+.yhteys-kortti a {
+    color: #B4B2A9;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.yhteys-kortti a:hover {
+    color: #ffffff;
+}
+
+
+/* RESPONSIIVISUUS */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 12px 0;
+        gap: 12px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    /* ETUSIVU */
+    .hero {
+        flex-direction: column;
+        margin: 40px auto;
+    }
+
+    .hero img {
+        margin-top: 0;
+    }
+
+    .hero-oikea {
+        margin-top: 0;
+    }
+
+    /* KOKEMUS-SIVU */
+    .kokemus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kokemus-taidot {
+        grid-column: 1;
+    }
+
+    /* YHTEYSTIEDOT */
+    .yhteys-grid {
+        gap: 24px;
+    }
+}
