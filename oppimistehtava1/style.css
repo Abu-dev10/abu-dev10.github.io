@@ -1,0 +1,291 @@
+/* Shared styles for the gym training website */
+:root {
+	color-scheme: light;
+	--color-ink: #17231d;
+	--color-muted: #46564c;
+	--color-paper: #f7f8f5;
+	--color-surface: #fff;
+	--color-green: #174b35;
+	--color-green-dark: #103725;
+	--color-accent: #d7ed9b;
+	--color-border: #cbd4cc;
+	--content-width: 70rem;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	font-size: 100%;
+	line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 20rem;
+	margin: 0;
+	color: var(--color-ink);
+	background: var(--color-paper);
+}
+
+a {
+	color: var(--color-green-dark);
+	text-underline-offset: 0.2em;
+}
+
+a:hover {
+	color: var(--color-green);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+	outline: 3px solid #8a4b00;
+	outline-offset: 3px;
+}
+
+.container,
+main {
+	width: min(100% - 2rem, var(--content-width));
+	margin-inline: auto;
+}
+
+header {
+	color: #fff;
+	background: var(--color-green-dark);
+}
+
+header .logo {
+	padding: 1rem 1rem 0;
+	text-align: center;
+}
+
+header .logo a {
+	color: #fff;
+	font-size: 1.35rem;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+header nav {
+	width: min(100% - 2rem, var(--content-width));
+	margin-inline: auto;
+	padding-bottom: 1rem;
+}
+
+header .container {
+	padding-block: 1rem;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem 1.5rem;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a {
+	display: inline-block;
+	padding: 0.4rem 0.55rem;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 0.25rem;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+	color: var(--color-ink);
+	background: var(--color-accent);
+}
+
+main {
+	min-height: 60vh;
+	padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--color-green-dark);
+	line-height: 1.2;
+	text-wrap: balance;
+}
+
+h1 {
+	margin-block: 0 1.25rem;
+	font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+h2 {
+	margin-block: 2rem 0.75rem;
+	font-size: clamp(1.5rem, 3vw, 2.15rem);
+}
+
+h3 {
+	margin-block: 1.5rem 0.5rem;
+	font-size: 1.25rem;
+}
+
+p {
+	max-width: 72ch;
+}
+
+img,
+picture,
+video {
+	max-width: 100%;
+}
+
+img {
+	display: block;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.hero img {
+	width: 100%;
+	max-height: 22rem;
+	object-fit: cover;
+}
+
+.button {
+	display: inline-block;
+	margin-top: 0.75rem;
+	padding: 0.65rem 1rem;
+	color: #fff;
+	background: var(--color-green);
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 0.35rem;
+}
+
+.button:hover {
+	color: #fff;
+	background: var(--color-green-dark);
+}
+
+figure {
+	margin: 1.5rem 0;
+}
+
+figcaption {
+	margin-top: 0.5rem;
+	color: var(--color-muted);
+	font-size: 0.9rem;
+}
+
+.table-wrap {
+	max-width: 100%;
+	overflow-x: auto;
+	border: 1px solid var(--color-border);
+	border-radius: 0.5rem;
+	background: var(--color-surface);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+caption {
+	padding: 0.75rem 1rem;
+	color: var(--color-ink);
+	font-weight: 700;
+	text-align: left;
+}
+
+th,
+td {
+	padding: 0.75rem 1rem;
+	border-bottom: 1px solid var(--color-border);
+}
+
+th {
+	color: #fff;
+	background: var(--color-green-dark);
+}
+
+tbody tr:nth-child(even) {
+	background: #edf2eb;
+}
+
+tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+footer {
+	padding: 1.5rem 1rem;
+	color: #fff;
+	background: var(--color-green-dark);
+	text-align: center;
+}
+
+footer a {
+	color: #e4f4c2;
+}
+
+footer p {
+	margin: 0.25rem auto;
+}
+
+@media (max-width: 40rem) {
+	header .logo {
+		padding-bottom: 0.5rem;
+	}
+
+	nav {
+		align-items: flex-start;
+	}
+
+	nav ul {
+		width: 100%;
+		flex-direction: column;
+		gap: 0.15rem;
+	}
+
+	nav a {
+		display: block;
+		padding: 0.6rem 0.55rem;
+	}
+
+	.hero {
+		grid-template-columns: 1fr;
+	}
+
+	th,
+	td {
+		padding: 0.6rem 0.75rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}

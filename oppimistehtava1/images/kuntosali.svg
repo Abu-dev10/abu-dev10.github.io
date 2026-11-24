@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Kuntosali</title>
+  <desc id="desc">Piirros kuntosalilaitteista</desc>
+  <rect width="800" height="500" fill="#dce8df"/>
+  <rect y="380" width="800" height="120" fill="#b8cbbd"/>
+  <rect x="70" y="90" width="660" height="240" rx="12" fill="#f8faf8"/>
+  <g stroke="#174b35" stroke-width="18" fill="none">
+    <path d="M140 330V160h210v170M170 210h150M250 210v120"/>
+    <path d="M480 330V150M430 180h100M430 180l-40 50M530 180l40 50"/>
+  </g>
+  <g fill="#17231d">
+    <rect x="120" y="300" width="250" height="38" rx="8"/>
+    <rect x="410" y="300" width="160" height="38" rx="8"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Harjoittelu</title>
+  <desc id="desc">Piirros voimaharjoittelusta</desc>
+  <rect width="800" height="500" fill="#e7eee8"/>
+  <rect y="400" width="800" height="100" fill="#b8cbbd"/>
+  <g stroke="#174b35" stroke-width="22" stroke-linecap="round" fill="none">
+    <path d="M180 180h440M220 180v220M580 180v220"/>
+  </g>
+  <g fill="#17231d">
+    <circle cx="400" cy="260" r="55"/>
+    <rect x="360" y="310" width="80" height="110" rx="35"/>
+  </g>
+</svg>

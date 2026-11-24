@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Treenaaja</title>
+  <desc id="desc">Piirros henkilosta harjoittelemassa leuanvetotankoa</desc>
+  <rect width="800" height="500" fill="#dce8df"/>
+  <rect y="400" width="800" height="100" fill="#b8cbbd"/>
+  <g stroke="#17231d" stroke-width="18" stroke-linecap="round" fill="none">
+    <path d="M180 100h440M400 100v300"/>
+    <circle cx="400" cy="220" r="48" fill="#f4c6a0" stroke="none"/>
+    <path d="M400 268v132M400 310l-100 90M400 310l100 90"/>
+  </g>
+</svg>
